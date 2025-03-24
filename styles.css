@@ -1,20 +1,68 @@
-button {
-    font-family: 'Times New Roman';
-    color: red;
-    background-color: black;
-    display: flex;
-    padding: 5px;
-    position: sticky;
-    top: 50px;
-    float: right;
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: black;
+    color: #00ffe7;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-shadow: 0 0 10px #00ffe7;
+  }
+  
+  .slideshow {
+    position: relative;
+    max-width: 700px;
+    margin: 4rem auto;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ffe7;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #00ffe7;
+    padding: 2rem;
+    z-index: 2;
+  }
+  
+  .slide {
+    display: none;
+    font-size: 1.1rem;
+    padding: 1rem;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffe7;
+    z-index: 2;
+  }
+  
+  button {
+    background: black;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffe7;
+    border: 2px solid #00ffe7;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #00ffe7;
+    z-index: 2;
+    transition: background 0.3s;
   }
   
   button:hover {
-    color: white;
-    background-color: purple;
+    background: #00ffe7;
+    color: black;
   }
   
-  #slideshow {
-    display: flex;
-    justify-content: center;
+  canvas#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
   }
+  
