@@ -11,7 +11,8 @@ body {
     font-size: 2rem;
     margin-top: 1rem;
     text-shadow: 0 0 10px #00ffe7;
-    z-index: 2;
+    z-index: 2; 
+    position: relative;
   }
   
   .slideshow {
