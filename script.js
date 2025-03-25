@@ -61,7 +61,7 @@ function resizeCanvas() {
   drawStars();
 
 
-const API_KEY = "DEMO_KEY";
+const API_KEY = "k1JhdDIOPmjScj5Fcau5DlS5ZNLrfZQVEEjUkjYO";
 const startDate = "2025-03-24";
 const endDate = "2025-03-24";
 const slidesContainer = document.getElementById("slides");
