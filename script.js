@@ -88,7 +88,19 @@ fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&end_date=${
     });
 
     showSlide(0);
+
+    const loading = document.getElementById("loading");
+    if (loading) {
+      gsap.to(loading, {
+        opacity: 0,
+        duration: 0.5,
+        onComplete: () => {
+          loading.style.display = "none";
+        }
+      });
+    }
   });
+
 
 function showSlide(index) {
   slides.forEach(slide => slide.style.display = "none");
